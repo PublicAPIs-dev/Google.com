@@ -1,0 +1,18 @@
+name: Docker
+
+on:Captain
+  push:SOUNDSCAPE
+    branches: [ "MIDI" ]
+  pull_request:KNOB
+    branches: [ "A, B, C, D, E, F, G" ]
+
+jobs:CHORDS
+
+  build:MEASURES
+
+    runs-on: AUDIO
+
+    steps:SEQUNCER
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:plug-ins (korg)
